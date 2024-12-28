@@ -1,5 +1,5 @@
 import webbrowser
-import PriceScraper
+import LegoPriceScraper
 import os
 
 from google.auth.transport.requests import Request
@@ -42,11 +42,11 @@ def updateValues():
   creds = authenticate()
   try:
     service = build("sheets", "v4", credentials=creds)
-    values = PriceScraper.UpdatedLEGOData()
+    values = LegoPriceScraper.UpdatedLEGOData()
     data = [] 
     # Start = row in sheet
-    for i, row_values in enumerate(values,start=5):
-        range_name = f"LEGO!B{i}:E{i}"
+    for i, row_values in enumerate(values,start=4):
+        range_name = f"DATALego!C{i}:F{i}"
         data.append({"range": range_name, "values": [row_values]})
     body = {"valueInputOption": "USER_ENTERED", "data": data}
     result = (
@@ -61,7 +61,6 @@ def updateValues():
   except HttpError as error:
     print(f"An error occurred: {error}")
     return error
-
 
 def main():
   updateValues() 

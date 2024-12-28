@@ -1,6 +1,7 @@
 token.json
 credentials.json
 .env
+page_source.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

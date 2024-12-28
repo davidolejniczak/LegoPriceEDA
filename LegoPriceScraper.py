@@ -3,19 +3,19 @@ import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
-ua = UserAgent(browsers=['Edge', 'Chrome','Safari','Firefox','Google'],platforms=['desktop'],os=['Windows','Linux','Mac OS X'])
+ua = UserAgent(browsers=['Edge', 'Chrome','Safari','Firefox','Google'],platforms=['desktop'],os=['Windows','Linux','Mac OS X'],)
 HEADER = {"User-Agent": ua.random}
 
 def UpdatedLEGOData(): 
-    with open ("URLS.txt", "r") as file:
-        URLS_LIST = file.readlines()
-        URLS_PY = [URL.strip() for URL in URLS_LIST]
+    with open ("LEGOURLS.txt", "r") as file:
+        UrlLegoList = file.readlines()
+        UrlSLegoPY = [UrlLego.strip() for UrlLego in UrlLegoList]
         
     updated_Data = []
     
-    for URL_PY in URLS_PY: 
+    for LegoUrl in UrlSLegoPY: 
         current_URL_Data = []
-        r = requests.get(URL_PY,headers=HEADER)
+        r = requests.get(LegoUrl,headers=HEADER)
         htmlSoup = BeautifulSoup(r.content, "html5lib")
         
         product_Id_Tag = htmlSoup.find("meta", property="product:retailer_item_id")
