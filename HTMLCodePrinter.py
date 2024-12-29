@@ -11,6 +11,7 @@ chromeOptions.add_argument('--headless')
 chromeOptions.add_argument('--disable-gpu')
 chromeOptions.add_argument('--no-sandbox')
 chromeOptions.add_argument('--disable-dev-shm-usage')
+chromeOptions.add_argument("--enable-javascript")
 chromeOptions.add_argument(ua.random)
 
 driver = webdriver.Chrome(service=Service('/usr/bin/chromedriver'), options=chromeOptions)

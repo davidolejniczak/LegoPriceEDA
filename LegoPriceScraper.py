@@ -18,21 +18,21 @@ def UpdatedLEGOData():
         r = requests.get(LegoUrl,headers=HEADER)
         htmlSoup = BeautifulSoup(r.content, "html5lib")
         
-        product_Id_Tag = htmlSoup.find("meta", property="product:retailer_item_id")
-        product_Id = product_Id_Tag["content"] if product_Id_Tag else "Not found product ID"
+        productIdTag = htmlSoup.find("meta", property="product:retailer_item_id")
+        productId = productIdTag["content"] if productIdTag else "Not found product ID"
         
-        price_Tag = htmlSoup.find("meta", property="product:price:amount")
-        price = price_Tag["content"] if price_Tag else "Not found price"
+        priceTag = htmlSoup.find("meta", property="product:price:amount")
+        price = priceTag["content"] if priceTag else "Not found price"
         
-        availability_Tag = htmlSoup.find("meta", property="product:availability")
-        availability = availability_Tag["content"] if availability_Tag else "Not found availability"
+        availabilityTag = htmlSoup.find("meta", property="product:availability")
+        availability = availabilityTag["content"] if availabilityTag else "Not found availability"
         
         shipping_Tag = htmlSoup.find("div", class_="ProductOverviewstyles__PriceAvailabilityWrapper-sc-1a1az6h-11 bgwYoN")
         shipping = shipping_Tag.find('span', class_="Markup__StyledMarkup-sc-nc8x20-0 dbPAWk").get_text() 
-        if not shipping: 
+        if not shipping:
             shipping = "Not found shipping"
         
-        current_URL_Data.append(product_Id)
+        current_URL_Data.append(productId)
         current_URL_Data.append(price)
         current_URL_Data.append(availability)
         current_URL_Data.append(shipping)

@@ -9,10 +9,8 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from dotenv import load_dotenv
 
-# Webserver for authentication
 webbrowser.register('chrome', None, webbrowser.BackgroundBrowser('/usr/bin/google-chrome')) 
 
-# If modifying scopes, delete the file token.json.
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 load_dotenv()
@@ -22,7 +20,6 @@ if not SPREADSHEET_ID:
   raise ValueError("No spreadsheet ID found in .env file.")
 
 def authenticate(): 
-  '''Authenticate with Google API'''
   creds = None
   if os.path.exists("token.json"):
     creds = Credentials.from_authorized_user_file("token.json", SCOPES)
@@ -44,7 +41,6 @@ def updateValues():
     service = build("sheets", "v4", credentials=creds)
     values = LegoPriceScraper.UpdatedLEGOData()
     data = [] 
-    # Start = row in sheet
     for i, row_values in enumerate(values,start=4):
         range_name = f"DATALego!C{i}:F{i}"
         data.append({"range": range_name, "values": [row_values]})
