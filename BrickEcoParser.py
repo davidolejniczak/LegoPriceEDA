@@ -11,12 +11,13 @@ def parseBrickEco():
 
     RetiredDate = ''
     MarketPriceStillAvailable = ''
-    MarketPriceRetired = ''
+    MarketPriceRetired = '' #WE DONT HAVE THIS YET 
     Theme = '' 
     RetirementPredictionPop = ''
     RetirementDataList = []
     RetirementData = ''
-
+    allData = []
+    
     for row in allRowlits:
         label = row.find('div', class_='col-xs-5 text-muted')
         value = row.find('div', class_='col-xs-7')
@@ -37,9 +38,26 @@ def parseBrickEco():
     MarketPriceStillAvailable = MarketPriceStillAvailable[:-6]+' '+MarketPriceStillAvailable[-6:]
     RetirementData = RetirementDataList[0]
     RetirementData = RetirementData[:-5]+' '+RetirementData[-5:]
+    
+    MarketPrice = ''
+    if not MarketPriceRetired:
+        MarketPrice = MarketPriceStillAvailable
+    else:
+        MarketPrice = MarketPriceRetired
+    
+    RetDDate = ''
+    if not RetiredDate:
+        RetDDate = RetirementData
+    else: 
+        RetDDate = RetiredDate
+    
+    
+    allData.append(MarketPriceStillAvailable)
 
-    print(RetirementData)
+
+    print(MarketPrice)
+    print(RetDDate)
     print(RetirementPredictionPop)
     print(Theme)
-    print(MarketPriceStillAvailable)
-    print(RetiredDate)
+    
+
