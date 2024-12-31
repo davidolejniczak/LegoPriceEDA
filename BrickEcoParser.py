@@ -1,10 +1,6 @@
 from bs4 import BeautifulSoup as BS
 
-def parseBrickEco():
-    filePath = 'page_source.html'
-    with open(filePath, 'r', encoding='utf-8') as file:
-        HtmlCode = file.read()
-
+def parseBrickEco(HTMLCode):
     MarketPriceStillAvailable = ''
     MarketPriceRetired = ''
     RetirementDataList = []
@@ -13,8 +9,11 @@ def parseBrickEco():
     RetirementPredictionPop = ''
     Theme = '' 
     allData = []
-    
-    soup = BS(HtmlCode, 'html.parser')
+
+    if not HTMLCode:
+        print("No HTML Code found in BrickEcoParser")
+        
+    soup = BS(HTMLCode, 'html.parser')
     allRowlits = soup.find_all('div', class_='row rowlist')
     
     for row in allRowlits:
@@ -72,12 +71,11 @@ def parseBrickEco():
     allData.append(RetDDate)
     allData.append(RetirementPredictionPop)
     allData.append(Theme)
+    #print(allData)
     return allData
 
-''' Used for testing
-def main():
+'''def main():
     parseBrickEco()
     
 if __name__ == "__main__":
-    main()
-'''
+    main()'''

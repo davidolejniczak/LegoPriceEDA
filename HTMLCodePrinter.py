@@ -1,31 +1,33 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from fake_useragent import UserAgent
+def loadCookies(driver, cookies):
+    driver.get('https://www.brickeconomy.com')  # Load the base page
+    for cookie in cookies:
+        driver.add_cookie(cookie)
+    driver.refresh()
 
-ua = UserAgent(browsers=['Chrome','Google'],platforms=['desktop'],os=['Windows','Linux','Mac OS X'],)
-
-chromeOptions = Options()
-chromeOptions.add_argument('--headless')
-chromeOptions.add_argument('--disable-gpu')
-chromeOptions.add_argument('--no-sandbox')
-chromeOptions.add_argument('--disable-dev-shm-usage')
-chromeOptions.add_argument("--enable-javascript")
-chromeOptions.add_argument(ua.random)
-
-driver = webdriver.Chrome(service=Service('/usr/bin/chromedriver'), options=chromeOptions)
-
-def getPageSource(url):
+def getPageSource(url,driver):
     try:
-        url = url
+        cookies = cookieMaker(driver)
+        if not cookies:
+            print("No cookies found in getPageSource from cookieMaker")
+        loadCookies(driver,cookies)
         driver.get(url)
-        wait = WebDriverWait(driver,20)
-        with open('page_source.html', 'w') as file:
-            file.write(driver.page_source)
-    
+        HTMLCode = driver.page_source
+        if not HTMLCode:
+            print("No HTML Code found in getPageSource")
+        return HTMLCode
     except Exception as e:
         print(f'An error occurred: {e}')
 
-    finally:
-        driver.quit()
+def cookieMaker(driver):
+    try:
+        url = 'https://www.brickeconomy.com'
+        driver.get(url)
+        ''' input("Solve CAPTCHA if presented, then press Enter...")
+        #why do I have to press something sometimes for it to work
+        #maybe do a auto button click '''
+
+        cookies = driver.get_cookies()
+        return cookies
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
