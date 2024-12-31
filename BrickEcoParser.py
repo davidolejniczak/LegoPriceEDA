@@ -1,22 +1,21 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as BS
 
 def parseBrickEco():
     filePath = 'page_source.html'
     with open(filePath, 'r', encoding='utf-8') as file:
         HtmlCode = file.read()
-        
-    soup = BeautifulSoup(HtmlCode, 'html.parser')
 
-    allRowlits = soup.find_all('div', class_='row rowlist')
-
-    RetiredDate = ''
     MarketPriceStillAvailable = ''
-    MarketPriceRetired = '' #WE DONT HAVE THIS YET 
-    Theme = '' 
-    RetirementPredictionPop = ''
+    MarketPriceRetired = ''
     RetirementDataList = []
     RetirementData = ''
+    RetiredDate = ''
+    RetirementPredictionPop = ''
+    Theme = '' 
     allData = []
+    
+    soup = BS(HtmlCode, 'html.parser')
+    allRowlits = soup.find_all('div', class_='row rowlist')
     
     for row in allRowlits:
         label = row.find('div', class_='col-xs-5 text-muted')
@@ -30,14 +29,29 @@ def parseBrickEco():
         if label and 'Retirement' in label.get_text(strip=True):
             RetirementText = value.get_text(strip=True)
             RetirementDataList.append(RetirementText)
-            
+        if label and 'Value' in row.get_text():
+            value_div = row.find('div', class_='col-xs-7')
+            if value_div and value_div.find('b'):
+                MarketPriceRetired = value_div.find('b').text
+    
     themeRows = soup.find_all('div', class_='semibold bdr-b-l pb-2 mb-6')         
     for themeRow in themeRows:
         Theme = themeRow.get_text(separator=' ', strip=True)
 
-    MarketPriceStillAvailable = MarketPriceStillAvailable[:-6]+' '+MarketPriceStillAvailable[-6:]
-    RetirementData = RetirementDataList[0]
-    RetirementData = RetirementData[:-5]+' '+RetirementData[-5:]
+    try: 
+        MarketPriceStillAvailable = MarketPriceStillAvailable[:-6]+' '+MarketPriceStillAvailable[-6:]
+    except: 
+        pass
+    
+    try: 
+        RetirementData = RetirementDataList[0]
+    except: 
+        pass
+    
+    try: 
+        RetirementData = RetirementData[:-5]+' '+RetirementData[-5:]
+    except:
+        pass
     
     MarketPrice = ''
     if not MarketPriceRetired:
@@ -51,13 +65,19 @@ def parseBrickEco():
     else: 
         RetDDate = RetiredDate
     
+    if not RetirementPredictionPop:
+        RetirementPredictionPop = 'Already Retired'
     
-    allData.append(MarketPriceStillAvailable)
+    allData.append(MarketPrice)
+    allData.append(RetDDate)
+    allData.append(RetirementPredictionPop)
+    allData.append(Theme)
+    return allData
 
-
-    print(MarketPrice)
-    print(RetDDate)
-    print(RetirementPredictionPop)
-    print(Theme)
+''' Used for testing
+def main():
+    parseBrickEco()
     
-
+if __name__ == "__main__":
+    main()
+'''

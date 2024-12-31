@@ -1,6 +1,6 @@
 import time
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as BS
 from fake_useragent import UserAgent
 
 ua = UserAgent(browsers=['Edge', 'Chrome','Safari','Firefox','Google'],platforms=['desktop'],os=['Windows','Linux','Mac OS X'],)
@@ -16,7 +16,7 @@ def UpdatedLEGOData():
     for LegoUrl in UrlSLegoPY: 
         current_URL_Data = []
         r = requests.get(LegoUrl,headers=HEADER)
-        htmlSoup = BeautifulSoup(r.content, "html5lib")
+        htmlSoup = BS(r.content, "html5lib")
         
         productIdTag = htmlSoup.find("meta", property="product:retailer_item_id")
         productId = productIdTag["content"] if productIdTag else "Not found product ID"
