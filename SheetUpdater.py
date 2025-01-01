@@ -35,14 +35,35 @@ def authenticate():
     
   return creds
 
-def updateValues():
+def brickUpdateValues(values):
+  creds = authenticate()
+  try: 
+    service = build("sheets", "v4", credentials=creds)
+    data = []
+    for i, row_values in enumerate(values,start=46):
+        range_name = f"DATA_Lego!B{i}:E{i}"
+        data.append({"range": range_name, "values": [row_values]})
+    body = {"valueInputOption": "USER_ENTERED", "data": data}
+    result = (
+        service.spreadsheets()
+        .values()
+        .batchUpdate(spreadsheetId=SPREADSHEET_ID, body=body)
+        .execute()
+    )
+    print(f"{(result.get('totalUpdatedCells'))} cells updated.")
+    return result
+  except HttpError as error:
+    print(f"An error occurred: {error}")
+    return error
+
+def legoUpdateValues():
   creds = authenticate()
   try:
     service = build("sheets", "v4", credentials=creds)
     values = LegoPriceScraper.UpdatedLEGOData()
     data = [] 
     for i, row_values in enumerate(values,start=4):
-        range_name = f"DATALego!C{i}:F{i}"
+        range_name = f"DATA_Lego!C{i}:F{i}"
         data.append({"range": range_name, "values": [row_values]})
     body = {"valueInputOption": "USER_ENTERED", "data": data}
     result = (
@@ -59,7 +80,7 @@ def updateValues():
     return error
 
 def main():
-  updateValues() 
+  legoUpdateValues()
     
 if __name__ == "__main__":
   main()

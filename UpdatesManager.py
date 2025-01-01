@@ -1,5 +1,6 @@
 import HTMLCodePrinter as HP
 import BrickEcoParser as BEP
+import SheetUpdater as SU
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -24,14 +25,12 @@ def BrickEconomyData():
         BrickUrlsPY = [UrlBrick.strip() for UrlBrick in BrickUrlsList]
     updatedBrickData = []
     for BrickUrl in BrickUrlsPY:
-        #print(BrickUrl,driver)
         HTMLCode = HP.getPageSource(BrickUrl,driver)
         updatedBrickData.append(BEP.parseBrickEco(HTMLCode))
         time.sleep(5)
-    #upload updatedBrickData to sheet
-    print(updatedBrickData)
+    SU.brickUpdateValues(updatedBrickData)
     driver.quit()
-    
+    print(updatedBrickData)
 def main ():
     BrickEconomyData()
     
