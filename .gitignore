@@ -3,6 +3,7 @@ credentials.json
 .env
 page_source.html
 cookies.pkl
+InternalLinks.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
