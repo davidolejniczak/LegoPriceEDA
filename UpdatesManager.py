@@ -4,7 +4,6 @@ import SheetUpdater as SU
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
 from fake_useragent import UserAgent
 import time
 
