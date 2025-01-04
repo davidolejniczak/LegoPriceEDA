@@ -19,7 +19,7 @@ chromeOptions.add_argument(ua.random)
 driver = webdriver.Chrome(service=Service('/usr/bin/chromedriver'), options=chromeOptions)
 
 def BrickEconomyData():
-    with open ("/URLs/BRICK_ECONOMY_URLS.txt", "r") as file:
+    with open ("URLs/BRICK_ECONOMY_URLS.txt", "r") as file:
         BrickUrlsList = file.readlines()
         BrickUrlsPY = [UrlBrick.strip() for UrlBrick in BrickUrlsList]
     updatedBrickData = []
