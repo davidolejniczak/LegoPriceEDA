@@ -1,4 +1,4 @@
-ages,list_price,num_reviews,piece_count,play_star_rating,prod_id,review_difficulty,set_name,star_rating,theme_name,val_star_rating,country
+ages,list_price,num_reviews,piece_count,play_star_rating,set_id,review_difficulty,set_name,star_rating,theme_name,val_star_rating,country
 12-Jun,29.99,2,277,4,75823,Average,Bird Island Egg Heist,4.5,Angry Birds™,4,US
 12-Jun,19.99,2,168,4,75822,Easy,Piggy Plane Attack,5,Angry Birds™,4,US
 12-Jun,12.99,11,74,4.3,75821,Easy,Piggy Car Escape,4.3,Angry Birds™,4.1,US
