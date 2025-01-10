@@ -1,0 +1,280 @@
+set_id,set_name_x,release_year,num_parts,num_figs,retail_price,num_unique_figs,set_rating,retire_price,pop_price,category,num_reviews,return
+10260,Downtown Diner,2018,2480,6,418.83,6,4.9,212.535,495.31,Modular Buildings,62.0,1.1826
+21139,The Nether Fight,2018,84,3,41.86,0,4.7,13.825,37.12,Minecraft,14.0,0.88677
+21140,The Chicken Coop,2018,198,1,64.4,0,4.7,22.585,56.0,Minecraft,4.0,0.86957
+21141,The Zombie Cave,2018,241,3,64.4,1,4.7,22.22,46.91,Minecraft,2.0,0.72842
+21144,The Farm Cottage,2018,549,3,209.4,0,4.8,59.875,131.11,Minecraft,4.0,0.62612
+21313,Ship in a Bottle,2018,962,0,225.51,0,4.8,73.56,147.61,LEGO Ideas and CUUSOO,83.0,0.65456
+21314,TRON: Legacy,2018,230,3,96.62,3,4.7,30.35,77.83,LEGO Ideas and CUUSOO,30.0,0.80553
+31073,Mythical Creatures,2018,223,0,41.86,0,4.8,13.92,39.02,Creator > Creator 3-in-1,5.0,0.93215
+31075,Outback Adventures,2018,225,1,57.96,1,4.7,19.165,38.94,Creator > Creator 3-in-1,1.0,0.67184
+31076,Daredevil Stunt Plane,2018,200,1,57.96,1,4.7,17.735,38.15,Creator > Creator 3-in-1,1.0,0.65821
+31079,Sunshine Surfer Van,2018,379,2,80.52,2,4.7,27.93,71.52,Creator > Creator 3-in-1,5.0,0.88823
+31080,Modular Winter Vacation,2018,374,2,80.52,2,4.7,32.815,50.84,Creator > Creator 3-in-1,2.0,0.6314
+41151,Mulan's Training Day,2018,104,1,41.86,1,4.4,11.875,22.18,Disney Princess,1.0,0.52986
+41152,Sleeping Beauty's Fairytale Castle,2018,322,3,96.62,3,4.8,29.615,65.6,Disney Princess,3.0,0.67895
+41153,Ariel's Royal Celebration Boat,2018,380,2,144.96,2,4.3,41.79,89.67,Disney Princess,3.0,0.61858
+41155,Elsa's Market Adventure,2018,125,2,57.96,2,4.5,17.86,35.94,Disney > Frozen,14.0,0.62008
+41332,Emma's Art Stand,2018,211,0,57.96,0,4.8,18.49,42.38,Friends,14.0,0.73119
+41334,Andrea's Park Performance,2018,229,0,64.4,0,4.4,23.455,40.07,Friends,1.0,0.6222
+41335,Mia's Tree House,2018,351,0,80.52,0,4.7,38.51,76.73,Friends,2.0,0.95293
+41336,Emma's Art Cafe,2018,378,0,96.62,0,4.7,29.13,72.56,Friends,3.0,0.75098
+41338,Stephanie's Sports Arena,2018,460,0,128.85,0,4.6,41.36,72.01,Friends,1.0,0.55887
+41340,Friendship House,2018,730,0,193.29,0,4.7,59.33,221.19,Friends,7.0,1.14434
+41597,Go Brick Me,2018,708,0,83.74,0,4.9,28.68,64.05,Brickheadz,13.0,0.76487
+41610,Tactical Batman & Superman,2018,209,0,57.96,0,4.9,19.2,67.12,Brickheadz,14.0,1.15804
+41613,Mr. Incredible & Frozone,2018,160,0,57.96,0,4.8,21.77,50.59,Brickheadz,1.0,0.87284
+41614,Owen & Blue,2018,234,0,57.96,0,4.7,18.94,35.61,Brickheadz,1.0,0.61439
+42072,WHACK!,2018,135,0,57.96,0,4.7,17.605,50.06,Technic,1.0,0.8637
+42073,BASH!,2018,139,0,57.96,0,4.7,19.26,43.63,Technic,2.0,0.75276
+42074,Racing Yacht,2018,331,0,80.52,0,4.7,38.28,90.83,Technic,5.0,1.12804
+42075,First Responder,2018,513,0,112.74,0,4.7,40.08,101.04,Technic,1.0,0.89622
+42076,Hovercraft,2018,1020,0,193.29,0,4.4,65.665,131.12,Technic,5.0,0.67836
+42077,Rally Car,2018,1005,0,289.95,0,4.5,93.55,208.91,Technic,8.0,0.7205
+42078,Mack Anthem,2018,2595,0,451.05,0,4.7,177.325,408.2,Technic,22.0,0.905
+60173,Mountain Arrest,2018,303,4,128.85,3,4.6,51.94,111.48,City > Police,2.0,0.86519
+60174,Mountain Police Headquarters,2018,663,7,225.51,5,4.7,73.565,199.04,City > Police,8.0,0.88262
+60180,Monster Truck,2018,192,1,48.3,1,4.5,16.755,38.36,City > Off-Road,4.0,0.7942
+60181,Forest Tractor,2018,174,1,57.96,1,4.7,20.89,46.89,City > Farm,7.0,0.80901
+60182,Pickup & Caravan,2018,344,3,80.52,3,4.7,25.98,95.75,City,7.0,1.18915
+60183,Heavy Cargo Transport,2018,310,2,80.52,2,4.7,27.865,73.06,City > Traffic,7.0,0.90735
+60185,Mining Power Splitter,2018,127,1,41.86,0,4.4,18.4,30.71,City > Construction,1.0,0.73364
+60186,Mining Heavy Driller,2018,294,3,128.85,0,4.5,39.435,85.94,City > Construction,1.0,0.66698
+60188,Mining Experts Site,2018,883,6,257.73,2,4.7,80.39,208.31,City > Construction,1.0,0.80825
+70638,Katana V11,2018,257,2,48.3,2,4.7,19.02,43.99,Ninjago,3.0,0.91077
+70641,Ninja Nightcrawler,2018,552,3,112.74,3,4.8,36.465,123.36,Ninjago,4.0,1.0942
+70642,Killow vs. Samurai X,2018,556,3,144.96,2,4.9,42.71,105.93,Ninjago,2.0,0.73075
+70643,Temple of Resurrection,2018,765,7,193.29,6,4.8,56.245,163.44,Ninjago,6.0,0.84557
+70918,The Bat-Dune Buggy,2018,198,2,64.4,1,4.7,18.93,35.74,Super Heroes DC > Batman > The LEGO Batman Movie,2.0,0.55497
+70919,The Justice League Anniversary Party,2018,268,4,96.62,4,4.5,29.95,53.04,Super Heroes DC > Batman > The LEGO Batman Movie,5.0,0.54895
+70920,Egghead Mech Food Fight,2018,293,3,96.62,2,4.6,26.31,50.26,Super Heroes DC > Batman > The LEGO Batman Movie,11.0,0.52018
+70921,Harley Quinn Cannonball Attack,2018,425,4,161.07,3,4.5,46.105,89.43,Super Heroes DC > Batman > The LEGO Batman Movie,5.0,0.55522
+70923,The Bat-Space Shuttle,2018,643,6,225.51,4,4.8,71.055,164.68,Super Heroes DC > Batman > The LEGO Batman Movie,9.0,0.73026
+75181,Y-Wing Starfighter,2018,1967,2,547.71,2,5.0,176.09,526.62,Star Wars > Ultimate Collector Series,1.0,0.96149
+75195,Ski Speeder vs First Order Walker Microfighters,2018,216,2,54.75,1,4.4,16.0,34.19,Star Wars,4.0,0.62447
+75196,A-Wing vs. TIE Silencer Microfighters,2018,188,2,54.75,1,4.3,17.12,37.26,Star Wars,3.0,0.68055
+75197,First Order Specialists Battle Pack,2018,108,4,41.86,1,4.7,13.135,29.51,Star Wars,15.0,0.70497
+75198,Tatooine Battle Pack,2018,97,4,41.86,1,4.5,14.43,27.63,Star Wars,14.0,0.66006
+75199,General Grievous' Combat Speeder,2018,157,2,83.74,1,4.7,25.53,76.95,Star Wars,19.0,0.91892
+75200,Ahch-To Island Training,2018,241,2,83.74,2,4.5,25.48,45.94,Star Wars,25.0,0.5486
+75201,First Order AT-ST,2018,370,4,177.18,3,4.8,44.58,83.98,Star Wars,37.0,0.47398
+75202,Defense of Crait,2018,746,5,241.62,3,4.3,67.71,132.47,Star Wars,4.0,0.54826
+75204,Sandspeeder,2018,278,2,112.74,2,4.8,33.09,55.61,Star Wars,13.0,0.49326
+75205,Mos Eisley Cantina,2018,376,4,144.96,1,4.5,43.77,70.25,Star Wars,14.0,0.48462
+75209,Han Solo's Landspeeder,2018,345,2,83.74,2,4.6,27.435,53.72,Star Wars,4.0,0.64151
+75210,Moloch's Landspeeder,2018,464,2,144.96,2,4.5,39.38,72.26,Star Wars,2.0,0.49848
+75212,Kessel Run Millennium Falcon,2018,1414,7,483.27,5,4.7,152.285,304.3,Star Wars,4.0,0.62967
+75535,Han Solo,2018,100,0,83.74,0,4.5,23.82,41.55,Star Wars,14.0,0.49618
+75536,Range Trooper,2018,101,0,83.74,0,4.8,24.54,45.8,Star Wars,3.0,0.54693
+75537,Darth Maul,2018,104,0,83.74,0,4.8,24.045,51.44,Star Wars,14.0,0.61428
+75886,"Ferrari 488 GT3 ""Scuderia Corsa""                               ",2018,186,1,41.86,1,4.8,14.505,43.7,Speed Champions,3.0,1.04396
+75887,Porsche 919 Hybrid,2018,170,1,41.86,1,4.8,15.19,43.99,Speed Champions,3.0,1.05088
+75888,Porsche 911 RSR and 911 Turbo 3.0,2018,398,3,112.74,3,4.9,33.64,82.64,Speed Champions,4.0,0.73301
+75889,Ferrari Ultimate Garage,2018,856,7,289.95,7,4.7,88.835,190.34,Speed Champions,2.0,0.65646
+75926,Pteranodon Chase,2018,126,2,64.4,1,4.8,19.16,37.43,Jurassic World,2.0,0.58121
+75928,Blue's Helicopter Pursuit,2018,397,3,161.07,2,4.8,41.87,108.87,Jurassic World,14.0,0.67592
+75929,Carnotaurus Gyrosphere Escape,2018,577,3,193.29,2,4.8,63.06,156.22,Jurassic World,1.0,0.80822
+75930,Indoraptor Rampage at Lockwood,2018,1019,6,386.61,3,4.9,115.61,303.15,Jurassic World,3.0,0.78412
+75931,Dilophosaurus Outpost Attack,2018,289,3,144.96,3,4.9,44.515,105.62,Jurassic World,1.0,0.72861
+75932,Jurassic Park Velociraptor Chase,2018,360,4,144.96,3,4.8,39.56,87.89,Jurassic World,4.0,0.60631
+75933,T-Rex Transport,2018,609,3,193.29,3,4.9,61.645,176.85,Jurassic World,14.0,0.91495
+76096,Superman & Krypto Team-Up,2018,208,2,64.4,1,4.7,18.435,34.51,Super Heroes DC > Justice League,1.0,0.53587
+76097,Lex Luthor Mech Takedown,2018,415,5,112.74,5,4.7,30.635,62.14,Super Heroes DC > Justice League,5.0,0.55118
+76098,Speed Force Freeze Pursuit,2018,280,4,96.62,3,4.7,33.615,65.19,Super Heroes DC > Justice League,6.0,0.67471
+76099,Rhino Face-Off by the Mine,2018,229,3,64.4,3,4.7,18.955,35.13,Super Heroes Marvel,6.0,0.5455
+76100,Royal Talon Fighter Attack,2018,358,4,96.62,3,4.7,28.205,48.03,Super Heroes Marvel,7.0,0.4971
+76101,Outrider Dropship Attack,2018,124,4,38.63,2,4.3,12.06,22.15,Super Heroes Marvel > Avengers,13.0,0.57339
+76102,Thor's Weapon Quest,2018,229,3,64.4,2,4.8,18.295,50.94,Super Heroes Marvel > Avengers,10.0,0.79099
+76103,Corvus Glaive Thresher Attack,2018,416,5,112.74,2,4.8,34.18,128.95,Super Heroes Marvel > Avengers,3.0,1.14378
+76104,The Hulkbuster Smash-Up,2018,375,4,96.62,2,4.8,29.025,59.21,Super Heroes Marvel > Avengers,13.0,0.61281
+76105,The Hulkbuster: Ultron Edition,2018,1363,1,386.61,1,4.9,125.455,267.4,Super Heroes Marvel > Avengers,52.0,0.69165
+76107,Thanos: Ultimate Battle,2018,681,4,225.51,5,4.9,65.685,128.82,Super Heroes Marvel > Avengers,17.0,0.57124
+10256,Taj Mahal,2017,5923,0,966.57,0,4.9,397.71,711.01,Creator > Creator Expert,43.0,0.7356
+21032,Sydney,2017,361,0,96.62,0,5.0,30.455,78.32,Architecture > Skylines,7.0,0.8106
+21033,Chicago,2017,444,0,144.96,0,4.9,42.515,103.12,Architecture > Skylines,11.0,0.71137
+21035,Solomon R. Guggenheim Museum,2017,744,0,209.4,0,4.8,68.61,138.39,Architecture,14.0,0.66089
+21036,Arc de Triomphe,2017,386,0,96.62,0,4.9,30.98,92.24,Architecture,14.0,0.95467
+21129,The Mushroom Island,2017,247,2,64.4,0,4.8,19.77,36.96,Minecraft,5.0,0.57391
+21130,The Nether Railway,2017,387,2,128.85,1,4.8,33.59,70.45,Minecraft,6.0,0.54676
+21134,The Waterfall Base,2017,729,4,241.62,2,4.7,65.49,129.72,Minecraft,7.0,0.53688
+21135,The Crafting Box 2.0,2017,717,2,257.73,1,4.8,68.685,178.82,Minecraft,1.0,0.69383
+21136,The Ocean Monument,2017,1122,2,386.61,1,4.8,112.05,226.99,Minecraft,2.0,0.58713
+21309,NASA Apollo Saturn V,2017,1969,0,354.39,0,4.7,112.375,241.47,LEGO Ideas and CUUSOO,367.0,0.68137
+21312,Women of NASA,2017,231,4,64.4,4,4.7,27.1,45.75,LEGO Ideas and CUUSOO,33.0,0.7104
+31063,Beachside Vacation,2017,275,2,64.4,2,4.3,21.695,48.45,Creator > Creator 3-in-1,5.0,0.75233
+31064,Island Adventures,2017,359,1,64.4,1,4.3,33.54,42.54,Creator > Creator 3-in-1,2.0,0.66056
+31066,Space Shuttle Explorer,2017,285,1,80.52,1,4.6,25.955,61.25,Creator > Creator 3-in-1,12.0,0.76068
+31067,Modular Poolside Holiday,2017,356,2,64.4,2,4.6,21.595,54.09,Creator > Creator 3-in-1,8.0,0.83991
+31068,Modular Modern Home,2017,386,2,90.18,2,4.6,29.26,53.05,Creator > Creator 3-in-1,10.0,0.58827
+31069,Modular Family Villa,2017,728,3,144.96,3,4.7,64.36,119.59,Creator > Creator 3-in-1,11.0,0.82499
+40171,Hedgehog Storage,2017,249,0,35.42,0,4.5,14.57,35.89,Friends,2.0,1.01327
+41145,Ariel and the Magical Spell,2017,222,2,80.52,2,4.8,26.0,50.41,Disney Princess,2.0,0.62606
+41146,Cinderella's Enchanted Evening,2017,351,2,128.85,2,4.4,41.17,67.65,Disney Princess,4.0,0.52503
+41147,Anna's Snow Adventure,2017,153,1,64.4,1,4.3,19.13,34.26,Disney > Frozen,2.0,0.53199
+41310,Heartlake Gift Delivery,2017,185,0,57.96,0,4.5,19.725,34.28,Friends,1.0,0.59144
+41311,Heartlake Pizzeria,2017,305,0,80.52,0,4.6,29.27,54.68,Friends,7.0,0.67909
+41312,Heartlake Sports Center,2017,328,0,128.85,0,4.6,40.53,65.92,Friends,3.0,0.5116
+41313,Heartlake Summer Pool,2017,589,0,177.18,0,4.5,45.035,112.25,Friends,6.0,0.63354
+41314,Stephanie's House,2017,640,0,209.4,0,4.6,64.085,216.69,Friends,8.0,1.03481
+41316,Andrea's Speedboat Transporter,2017,309,0,80.52,0,4.4,23.995,53.68,Friends,1.0,0.66667
+41317,Sunshine Catamaran,2017,603,0,209.4,0,4.2,73.84,121.5,Friends,2.0,0.58023
+41318,Heartlake Hospital,2017,880,0,273.85,0,4.6,85.93,189.61,Friends,4.0,0.69239
+41319,Snow Resort Hot Chocolate Van,2017,246,0,64.4,0,4.6,25.98,50.22,Friends,3.0,0.77981
+41323,Snow Resort Chalet,2017,402,0,128.85,0,4.5,37.77,73.47,Friends,4.0,0.5702
+41324,Snow Resort Ski Lift,2017,585,0,177.18,0,4.7,55.29,96.14,Friends,3.0,0.54261
+42057,Ultralight Helicopter,2017,199,0,48.3,0,4.7,20.325,46.9,Technic,9.0,0.97101
+42058,Stunt Bike,2017,140,0,57.96,0,4.7,18.19,43.75,Technic,2.0,0.75483
+42059,Stunt Truck,2017,142,0,57.96,0,4.5,21.96,42.75,Technic,7.0,0.73758
+42060,Roadwork Crew,2017,365,0,64.4,0,4.6,23.655,41.99,Technic,10.0,0.65202
+42061,Telehandler,2017,260,0,80.52,0,4.4,31.04,59.88,Technic,6.0,0.74367
+42062,Container Yard,2017,631,0,177.18,0,4.7,56.125,103.95,Technic,8.0,0.58669
+42064,Ocean Explorer,2017,1327,0,241.62,0,4.7,131.79,232.43,Technic,14.0,0.96197
+42065,RC Tracked Racer,2017,370,0,241.62,0,4.4,95.12,163.5,Technic,28.0,0.67668
+42066,Air Race Jet,2017,1151,0,354.39,0,4.5,158.72,217.98,Technic,7.0,0.61509
+42069,Extreme Adventure,2017,2382,0,451.05,0,4.5,156.825,271.2,Technic,19.0,0.60126
+42070,6x6 All Terrain Tow Truck,2017,1862,0,708.81,0,4.6,247.265,517.93,Technic,45.0,0.7307
+60137,Tow Truck Trouble,2017,144,3,57.96,3,4.4,23.69,46.0,City > Police,8.0,0.79365
+60140,Bulldozer Break-In,2017,561,5,209.4,2,4.6,63.48,118.69,City > Police,9.0,0.56681
+60141,Police Station,2017,894,7,273.85,4,4.7,95.59,267.44,City > Police,10.0,0.97659
+60142,Money Transporter,2017,138,2,41.86,2,4.7,20.085,51.74,City > Police,7.0,1.23602
+60148,ATV Race Team,2017,239,2,57.96,2,4.6,20.05,47.95,City > Traffic,12.0,0.82729
+60150,Pizza Van,2017,249,2,48.3,2,4.5,18.875,42.2,City > Traffic,35.0,0.87371
+60153,People Pack - Fun At The Beach,2017,169,15,112.74,15,4.4,35.59,60.22,City,10.0,0.53415
+60158,Jungle Cargo Helicopter,2017,201,2,51.52,1,4.7,18.8,35.76,City > Jungle,5.0,0.6941
+60159,Jungle Halftrack Mission,2017,378,2,80.52,2,4.5,28.325,58.8,City > Jungle,5.0,0.73025
+60161,Jungle Exploration Site,2017,813,7,273.85,6,4.7,106.62,182.92,City > Jungle,6.0,0.66796
+60162,Jungle Air Drop Helicopter,2017,1250,7,354.39,4,4.8,133.82,228.85,City > Jungle,1.0,0.64576
+60164,Sea Rescue Plane,2017,141,2,51.52,2,4.7,18.71,32.38,City > Coast Guard,3.0,0.62849
+60166,Heavy-Duty Rescue Helicopter,2017,415,4,128.85,4,4.6,51.08,92.83,City > Coast Guard,8.0,0.72045
+60167,Coast Guard Head Quarters,2017,795,7,273.85,7,4.5,98.7,245.27,City > Coast Guard,3.0,0.89564
+60168,Sailboat Rescue,2017,196,2,64.4,2,4.6,29.15,55.8,City > Coast Guard,14.0,0.86646
+60169,Cargo Terminal,2017,740,4,209.4,4,4.5,61.67,128.66,City > Cargo,4.0,0.61442
+70607,NINJAGO City Chase,2017,233,5,48.3,3,4.4,21.515,40.32,Ninjago > Ninjago The Movie,18.0,0.83478
+70608,Master Falls,2017,312,4,80.52,0,4.8,27.545,61.45,Ninjago > Ninjago The Movie,10.0,0.76316
+70610,Flying Jelly Sub,2017,341,4,80.52,3,4.7,25.68,48.32,Ninjago > Ninjago The Movie,8.0,0.6001
+70611,Water Strider,2017,494,4,128.85,1,4.8,36.245,63.08,Ninjago > Ninjago The Movie,21.0,0.48956
+70613,Garma Mecha Man,2017,747,4,193.29,1,4.9,55.845,108.41,Ninjago > Ninjago The Movie,8.0,0.56087
+70614,Lightning Jet,2017,876,3,193.29,4,4.8,69.695,113.26,Ninjago > Ninjago The Movie,8.0,0.58596
+70615,Fire Mech,2017,944,6,193.29,5,4.8,62.595,121.76,Ninjago > Ninjago The Movie,19.0,0.62993
+70616,Ice Tank,2017,914,5,257.73,3,4.9,84.105,231.36,Ninjago > Ninjago The Movie,6.0,0.89768
+70618,Destiny's Bounty,2017,2296,7,354.39,1,4.9,162.515,370.78,Ninjago > Ninjago The Movie,52.0,1.04625
+70620,NINJAGO City,2017,4873,19,837.69,16,5.0,256.805,883.73,Ninjago > Ninjago The Movie,88.0,1.05496
+70623,Destiny's Shadow,2017,361,3,80.52,2,4.7,36.7,63.14,Ninjago,7.0,0.78415
+70624,Vermillion Invader,2017,313,3,80.52,0,4.7,29.06,49.49,Ninjago,5.0,0.61463
+70629,Piranha Attack,2017,217,4,48.3,1,4.8,18.925,37.77,Ninjago > Ninjago The Movie,8.0,0.78199
+70632,Quake Mech,2017,1202,5,257.73,3,4.9,74.305,175.72,Ninjago > Ninjago The Movie,11.0,0.6818
+70656,"garmadon, Garmadon, GARMADON!                                    ",2017,830,6,257.73,3,4.8,79.815,173.13,Ninjago > Ninjago The Movie,9.0,0.67175
+70900,The Joker Balloon Escape,2017,124,2,38.63,1,4.3,13.54,22.37,Super Heroes DC > Batman > The LEGO Batman Movie,18.0,0.57908
+70901,Mr. Freeze Ice Attack,2017,201,3,64.4,2,4.8,17.985,34.6,Super Heroes DC > Batman > The LEGO Batman Movie,19.0,0.53727
+70902,Catwoman Catcycle Chase,2017,139,3,64.4,0,4.2,22.185,33.37,Super Heroes DC > Batman > The LEGO Batman Movie,27.0,0.51817
+70903,The Riddler Riddle Racer,2017,254,5,96.62,4,4.2,26.725,50.83,Super Heroes DC > Batman > The LEGO Batman Movie,18.0,0.52608
+70904,Clayface Splat Attack,2017,448,2,96.62,1,4.2,30.925,54.27,Super Heroes DC > Batman > The LEGO Batman Movie,13.0,0.56168
+70905,The Batmobile,2017,581,5,177.18,1,4.6,51.82,104.15,Super Heroes DC > Batman > The LEGO Batman Movie,20.0,0.58782
+70906,The Joker Notorious Lowrider,2017,433,3,177.18,1,4.5,54.74,89.9,Super Heroes DC > Batman > The LEGO Batman Movie,19.0,0.50739
+70907,Killer Croc Tail-Gator,2017,460,4,209.4,3,4.4,73.715,117.23,Super Heroes DC > Batman > The LEGO Batman Movie,10.0,0.55984
+70908,The Scuttler,2017,775,6,273.85,5,4.2,78.585,131.76,Super Heroes DC > Batman > The LEGO Batman Movie,15.0,0.48114
+70910,Scarecrow Special Delivery,2017,203,3,64.4,2,4.5,20.96,33.13,Super Heroes DC > Batman > The LEGO Batman Movie,8.0,0.51444
+70911,The Penguin Arctic Roller,2017,305,2,96.62,1,4.8,28.1,54.37,Super Heroes DC > Batman > The LEGO Batman Movie,24.0,0.56272
+70914,Bane Toxic Truck Attack,2017,366,3,161.07,2,4.7,48.02,89.57,Super Heroes DC > Batman > The LEGO Batman Movie,6.0,0.55609
+70915,Two-Face Double Demolition,2017,564,4,161.07,3,4.5,50.985,84.69,Super Heroes DC > Batman > The LEGO Batman Movie,6.0,0.5258
+70916,The Batwing,2017,1053,3,322.17,1,4.4,89.095,169.67,Super Heroes DC > Batman > The LEGO Batman Movie,4.0,0.52665
+70922,The Joker Manor,2017,3445,10,805.47,7,4.9,246.88,536.74,Super Heroes DC > Batman > The LEGO Batman Movie,19.0,0.66637
+75144,Snowspeeder,2017,1703,2,547.71,2,4.7,160.93,340.05,Star Wars > Ultimate Collector Series,87.0,0.62086
+75164,Rebel Trooper Battle Pack,2017,119,4,38.63,4,4.7,12.7,26.53,Star Wars,10.0,0.68677
+75165,Imperial Trooper Battle Pack,2017,111,4,38.63,0,4.7,12.7,37.5,Star Wars,36.0,0.97075
+75168,Yoda's Jedi Starfighter,2017,262,2,64.4,0,4.7,22.14,37.87,Star Wars,37.0,0.58804
+75169,Duel on Naboo,2017,208,3,64.4,2,4.7,21.61,39.01,Star Wars,32.0,0.60575
+75170,The Phantom,2017,269,3,128.85,2,4.8,34.215,62.69,Star Wars,25.0,0.48653
+75171,Battle on Scarif,2017,419,4,177.18,3,4.8,50.825,90.86,Star Wars,19.0,0.51281
+75172,Y-Wing Starfighter,2017,691,5,209.4,3,4.8,61.81,113.77,Star Wars,51.0,0.54331
+75173,Luke's Landspeeder,2017,149,4,64.4,0,4.6,21.365,38.22,Star Wars,27.0,0.59348
+75174,Desert Skiff Escape,2017,284,4,96.62,2,4.7,29.91,57.24,Star Wars,27.0,0.59242
+75177,First Order Heavy Scout Walker,2017,554,4,161.07,2,4.3,50.95,83.75,Star Wars,9.0,0.51996
+75178,Jakku Quadjumper,2017,457,5,177.18,1,4.8,48.81,94.18,Star Wars,12.0,0.53155
+75180,Rathtar Escape,2017,836,5,273.85,1,4.5,78.13,137.13,Star Wars,3.0,0.50075
+75182,Republic Fighter Tank,2017,305,4,64.4,2,4.7,22.51,50.49,Star Wars,27.0,0.78401
+75183,Darth Vader Transformation,2017,290,6,64.4,4,4.7,20.675,48.54,Star Wars,38.0,0.75373
+75185,Tracker I,2017,557,4,209.4,2,4.5,61.965,109.78,Star Wars,6.0,0.52426
+75187,BB-8,2017,1106,1,273.85,0,4.8,90.31,200.36,Star Wars,79.0,0.73164
+75188,Resistance Bomber,2017,780,6,322.17,0,4.8,102.52,174.43,Star Wars,23.0,0.54142
+75190,First Order Star Destroyer,2017,1416,8,418.83,4,4.8,130.725,371.69,Star Wars,31.0,0.88745
+75523,Scarif Stormtrooper,2017,89,0,64.4,0,4.4,32.245,39.8,Star Wars,1.0,0.61801
+75525,Baze Malbus,2017,148,0,64.4,0,4.3,21.29,37.83,Star Wars,1.0,0.58742
+75526,Elite TIE Fighter Pilot,2017,94,0,64.4,0,4.8,18.58,37.38,Star Wars,1.0,0.58043
+75529,Elite Praetorian Guard,2017,92,0,64.4,0,4.8,30.73,37.14,Star Wars,7.0,0.57671
+75530,Chewbacca,2017,179,0,80.52,0,4.6,27.32,64.07,Star Wars,5.0,0.7957
+75531,Stormtrooper Commander,2017,100,0,64.4,0,4.7,19.775,40.54,Star Wars,3.0,0.6295
+75532,Scout Trooper & Speeder Bike,2017,452,0,161.07,0,4.7,48.235,104.64,Star Wars,11.0,0.64966
+75878,Bugatti Chiron,2017,188,1,41.86,1,4.9,13.725,47.12,Speed Champions,19.0,1.12566
+75879,Scuderia Ferrari SF16-H,2017,184,1,41.86,1,4.9,18.545,38.59,Speed Champions,11.0,0.92188
+75880,McLaren 720S,2017,168,1,41.86,1,4.8,19.165,44.04,Speed Champions,10.0,1.05208
+75881,2016 Ford GT & 1966 Ford GT40,2017,373,3,96.62,3,4.8,34.44,97.67,Speed Champions,12.0,1.01087
+75883,MERCEDES AMG PETRONAS Formula One Team,2017,963,8,273.85,7,4.7,89.57,175.1,Speed Champions,8.0,0.6394
+76075,Wonder Woman Warrior Battle,2017,286,2,96.62,2,4.8,30.635,57.75,Super Heroes DC,7.0,0.5977
+76076,Captain America Jet Pursuit,2017,161,3,64.4,3,4.7,18.225,64.38,Super Heroes Marvel > Avengers,10.0,0.99969
+76079,Ravager Attack,2017,198,3,64.4,2,4.7,19.55,39.44,Super Heroes Marvel > Guardians of the Galaxy,9.0,0.61242
+76083,Beware the Vulture,2017,376,4,144.96,3,4.2,39.89,75.88,Super Heroes Marvel > Spider-Man,23.0,0.52345
+76084,The Ultimate Battle for Asgard,2017,401,6,161.07,4,4.3,59.935,91.65,Super Heroes Marvel,6.0,0.56901
+76085,Battle of Atlantis,2017,198,4,64.4,3,4.2,18.275,32.99,Super Heroes DC > Justice League,9.0,0.51227
+76086,Knightcrawler Tunnel Attack,2017,623,4,177.18,2,4.5,56.53,84.42,Super Heroes DC > Justice League,6.0,0.47646
+76087,Flying Fox: Batmobile Airlift Attack,2017,956,6,322.17,2,4.6,97.065,179.25,Super Heroes DC > Justice League,13.0,0.55638
+76088,Thor vs. Hulk: Arena Clash,2017,493,5,177.18,5,4.5,56.165,112.48,Super Heroes Marvel,6.0,0.63483
+10253,Big Ben,2016,4167,0,547.71,0,4.6,205.97,398.74,Creator > Creator Expert,64.0,0.72801
+21029,Buckingham Palace,2016,780,0,128.85,0,4.8,47.055,92.1,Architecture,24.0,0.71478
+21030,United States Capitol Building,2016,1032,0,273.85,0,4.8,89.325,210.45,Architecture,23.0,0.76849
+21123,The Iron Golem,2016,208,2,64.4,0,4.8,19.475,40.03,Minecraft,16.0,0.62158
+21124,The End Portal,2016,559,3,161.07,1,4.8,55.985,134.81,Minecraft,6.0,0.83697
+21125,The Jungle Tree House,2016,707,4,241.62,1,4.8,71.26,156.87,Minecraft,14.0,0.64924
+21308,Adventure Time,2016,496,0,144.96,0,4.5,42.06,74.39,LEGO Ideas and CUUSOO,23.0,0.51318
+31046,Fast Car,2016,222,0,57.96,0,4.6,20.085,36.28,Creator > Creator 3-in-1,8.0,0.62595
+31047,Propeller Plane,2016,230,0,57.96,0,4.5,24.18,43.96,Creator > Creator 3-in-1,7.0,0.75845
+31049,Twin Spin Helicopter,2016,326,0,64.4,0,4.6,27.41,64.88,Creator > Creator 3-in-1,4.0,1.00745
+31059,Sunset Street Bike,2016,194,0,57.96,0,4.6,21.525,34.55,Creator > Creator 3-in-1,1.0,0.5961
+31060,Airshow Aces,2016,246,0,57.96,0,4.5,20.005,40.31,Creator > Creator 3-in-1,14.0,0.69548
+41066,Anna & Kristoff's Sleigh Adventure,2016,174,2,80.52,1,4.4,28.875,48.0,Disney > Frozen,11.0,0.59613
+41124,Heartlake Puppy Daycare,2016,286,0,80.52,0,4.6,34.645,67.51,Friends,5.0,0.83843
+41126,Heartlake Riding Club,2016,590,0,161.07,0,4.5,56.665,129.54,Friends,5.0,0.80425
+41128,Amusement Park Space Ride,2016,195,0,57.96,0,4.5,19.0,41.73,Friends,8.0,0.71998
+41132,Heartlake Party Shop,2016,176,0,80.52,0,4.6,26.23,58.58,Friends,5.0,0.72752
+41134,Heartlake Performance School,2016,774,0,225.51,0,4.5,78.03,143.56,Friends,5.0,0.6366
+41149,Moana's Island Adventure,2016,205,1,80.52,1,4.7,24.425,50.2,Disney Princess,2.0,0.62345
+41150,Moana's Ocean Voyage,2016,307,2,128.85,2,4.7,36.695,66.06,Disney Princess,3.0,0.51269
+42045,Hydroplane Racer,2016,180,0,48.3,0,4.4,16.595,36.98,Technic,5.0,0.76563
+42049,Mine Loader,2016,476,0,96.62,0,4.5,53.28,71.66,Technic,9.0,0.74167
+42053,Volvo EW160E,2016,1166,0,305.42,0,4.6,123.56,185.4,Technic,18.0,0.60703
+42054,CLAAS XERION 5000 TRAC VC,2016,1976,0,386.61,0,4.4,144.59,290.86,Technic,18.0,0.75233
+60101,Airport Cargo Plane,2016,157,2,57.96,0,4.7,20.085,57.54,City > Airport,13.0,0.99275
+60107,Fire Ladder Truck,2016,214,2,57.96,1,4.7,18.765,45.61,City > Fire,11.0,0.78692
+60109,Fire Boat,2016,415,5,193.29,4,4.5,66.39,145.4,City > Fire,2.0,0.75224
+60110,Fire Station,2016,920,6,257.73,2,4.7,107.15,204.73,City > Fire,16.0,0.79436
+60117,Van & Caravan,2016,250,2,57.96,2,4.3,17.445,48.43,City > Traffic,35.0,0.83558
+60119,Ferry,2016,301,2,80.52,2,4.3,25.5,59.15,City > Harbor,14.0,0.7346
+60121,Volcano Exploration Truck,2016,175,0,48.3,0,4.3,19.245,41.05,City,6.0,0.8499
+60124,Volcano Exploration Base,2016,824,6,257.73,1,4.4,116.27,162.32,City,9.0,0.62981
+60125,Volcano Heavy-Lift Helicopter,2016,1277,8,322.17,1,4.2,131.98,197.41,City,5.0,0.61275
+60129,Police Patrol Boat,2016,200,4,112.74,2,4.7,48.56,100.36,City > Police,5.0,0.89019
+60134,People Pack - Fun in the Park,2016,159,15,112.74,14,4.2,40.185,93.06,City,30.0,0.82544
+70601,Sky Shark,2016,222,2,57.96,1,4.7,17.655,50.36,Ninjago,12.0,0.86888
+70603,Raid Zeppelin,2016,295,3,80.52,3,4.8,25.485,55.69,Ninjago,8.0,0.69163
+70605,Misfortune's Keep,2016,754,6,225.51,2,4.7,71.51,134.23,Ninjago,8.0,0.59523
+75114,First Order Stormtrooper,2016,81,0,48.3,0,4.8,18.135,41.18,Star Wars,10.0,0.85259
+75116,Finn,2016,98,0,64.4,0,4.5,18.45,35.51,Star Wars,1.0,0.5514
+75117,Kylo Ren,2016,86,0,64.4,0,4.6,20.855,55.91,Star Wars,12.0,0.86817
+75118,Captain Phasma,2016,82,0,64.4,0,4.6,20.555,35.62,Star Wars,10.0,0.55311
+75119,Sergeant Jyn Erso,2016,104,0,64.4,0,4.3,19.53,40.88,Star Wars,3.0,0.63478
+75120,K-2SO,2016,169,0,64.4,0,4.7,25.68,43.6,Star Wars,12.0,0.67702
+75121,Imperial Death Trooper,2016,106,0,64.4,0,4.6,22.325,35.8,Star Wars,4.0,0.5559
+75132,First Order Battle Pack,2016,88,4,38.63,2,4.6,12.33,26.68,Star Wars,38.0,0.69065
+75139,Battle on Takodana,2016,409,5,161.07,2,4.6,54.65,90.7,Star Wars,47.0,0.56311
+75147,StarScavenger,2016,558,4,161.07,3,4.7,52.32,85.61,Star Wars,12.0,0.53151
+75148,Encounter on Jakku,2016,530,4,161.07,2,4.5,52.07,88.44,Star Wars,24.0,0.54908
+75154,TIE Striker,2016,543,4,193.29,2,4.4,85.02,105.41,Star Wars,39.0,0.54535
+75155,Rebel U-Wing Fighter,2016,659,5,225.51,4,4.9,72.82,115.92,Star Wars,56.0,0.51403
+75156,Krennic's Imperial Shuttle,2016,863,6,257.73,6,4.7,81.27,141.6,Star Wars,39.0,0.54941
+75159,Death Star,2016,4024,27,1320.99,8,4.9,488.71,1603.57,Star Wars > Ultimate Collector Series,84.0,1.21392
+75871,Ford Mustang GT,2016,188,1,41.86,1,4.9,16.755,44.51,Speed Champions,28.0,1.06331
+75872,Audi R18 e-tron quattro,2016,169,1,41.86,1,4.7,14.465,47.95,Speed Champions,9.0,1.14548
+76045,Kryptonite Interception,2016,307,3,96.62,2,4.8,35.985,54.66,Super Heroes DC > Justice League,18.0,0.56572
+76054,Batman: Scarecrow Harvest of Fear,2016,564,5,193.29,5,4.4,53.22,99.56,Super Heroes DC > Batman,9.0,0.51508
+76055,Batman: Killer Croc Sewer Smash,2016,760,5,225.51,4,4.5,71.815,127.72,Super Heroes DC > Batman,11.0,0.56636
+76060,Doctor Strange's Sanctum Sanctorum,2016,359,3,96.62,3,4.9,30.345,65.41,Super Heroes Marvel,15.0,0.67698
