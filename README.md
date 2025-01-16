@@ -100,6 +100,7 @@ The average ROI chart by category revealed:
 
 #### Take Aways
 Based on the results of the linear regression models, the Least Squares Regression method is the most suitable for modeling the ROI of Lego sets. It achieved the highest R2 score of 0.5328 during training and 0.3724 during testing, indicating better predictive performance compared to Cross-Validation and Lasso Regression. However, the relatively low R2 scores across all models highlight the need for additional features and a larger dataset to improve prediction accuracy. Despite these limitations, the project successfully demonstrated the feasibility of using statistical models to estimate Lego set returns, paving the way for future enhancements in data collection and modeling.
+
 ---
 
 ### Future Improvements
