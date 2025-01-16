@@ -24,7 +24,7 @@ plt.ylabel('Retail Price (USD)', fontsize=12)
 plt.legend()
 plt.grid(axis='both', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('PieceCountVsRetailPrice.png')
+plt.savefig('Charts/PieceCountVsRetailPrice.png')
 plt.close()
 
 '''Plot 2: ROI Heatmap by Category'''
@@ -39,7 +39,7 @@ plt.ylabel('Category', fontsize=12)
 plt.xlabel('ROI', fontsize=12)
 plt.xticks(rotation=0)
 plt.tight_layout()
-plt.savefig('ROIHeatmapbyCategory.png')
+plt.savefig('Charts/ROIHeatmapbyCategory.png')
 plt.close()
 
 '''Plot 3: Barplot for Average ROI'''
@@ -49,7 +49,7 @@ plt.title('Average ROI by Category', fontsize=16)
 plt.xlabel('Average ROI', fontsize=12)
 plt.ylabel('Category', fontsize=12)
 plt.tight_layout()
-plt.savefig('AverageROIbyCategory.png')
+plt.savefig('Charts/AverageROIbyCategory.png')
 plt.close()
 
 '''Least Square Error Regression'''
@@ -82,7 +82,7 @@ plt.ylabel("Predictions")
 plt.title("True vs Predicted (Test Set)")
 plt.grid(axis='both', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('LSEPrediction.png')
+plt.savefig('Charts/LSEPrediction.png')
 plt.close()
 
 '''Cross-Validation Regression'''
@@ -102,7 +102,7 @@ plt.ylabel("Predicted Values")
 plt.title("Cross-Validation Predictions")
 plt.grid(axis='both', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('CrossValidationPredictions.png')
+plt.savefig('Charts/CrossValidationPredictions.png')
 plt.close()
 
 '''Lasso Regression'''
@@ -123,7 +123,7 @@ plt.ylabel("Predicted Values")
 plt.title("Lasso Regression Predictions (Test Set)")
 plt.grid(axis='both', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('LassoPrediction.png')
+plt.savefig('Charts/LassoPrediction.png')
 plt.close()
 
 coefficients = pd.DataFrame({
