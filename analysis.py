@@ -53,30 +53,30 @@ plt.savefig('Charts/AverageROIbyCategory.png')
 plt.close()
 
 '''Least Square Error Regression'''
-df_encoded = pd.get_dummies(df, columns=['category'], drop_first=True)
-df_model = df_encoded[['set_id', 'num_parts', 'num_figs', 'retail_price', 
+dfencoded = pd.get_dummies(df, columns=['category'], drop_first=True)
+dfmodel = dfencoded[['set_id', 'num_parts', 'num_figs', 'retail_price', 
                        'num_unique_figs', 'set_rating', 'pop_price', 
                        'num_reviews', 'return']]
-X = df_model.drop(['return'], axis=1)
-y = df_model['return']
+X = dfmodel.drop(['return'], axis=1)
+y = dfmodel['return']
 
 
 X = X.apply(pd.to_numeric, errors='coerce')
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2, random_state=42)
 model = LinearRegression()
-model.fit(X_train, y_train)
+model.fit(Xtrain, ytrain)
 
-y_train_pred = model.predict(X_train)
-y_test_pred = model.predict(X_test)
+ytrainpred = model.predict(Xtrain)
+ytestpred = model.predict(Xtest)
 
-print("Training R2 Score:", r2_score(y_train, y_train_pred))
-print("Training MAE Score:", mean_absolute_error(y_train, y_train_pred))
-print("Test R2 Score:", r2_score(y_test, y_test_pred))
-print("Test MAE Score:", mean_absolute_error(y_test, y_test_pred))
+print("Training R2 Score:", r2_score(ytrain, ytrainpred))
+print("Training MAE Score:", mean_absolute_error(ytrain, ytrainpred))
+print("Test R2 Score:", r2_score(ytest, ytestpred))
+print("Test MAE Score:", mean_absolute_error(ytest, ytestpred))
 
 plt.figure(figsize=(10, 6))
-plt.scatter(y_test, y_test_pred, alpha=0.5, color='orange')
+plt.scatter(ytest, ytestpred, alpha=0.5, color='orange')
 plt.xlabel("True Values")
 plt.ylabel("Predictions")
 plt.title("True vs Predicted (Test Set)")
@@ -86,12 +86,12 @@ plt.savefig('Charts/LSEPrediction.png')
 plt.close()
 
 '''Cross-Validation Regression'''
-cross_val_r2_scores = cross_val_score(model, X, y, cv=5, scoring='r2')
-print("Cross-Validation R2 Score:", cross_val_r2_scores.mean())
+crossValR2Scores = cross_val_score(model, X, y, cv=5, scoring='r2')
+print("Cross-Validation R2 Score:", crossValR2Scores.mean())
 
 mae = make_scorer(mean_absolute_error, greater_is_better=False)
-cross_val_mae_scores = cross_val_score(model, X, y, cv=5, scoring=mae)
-print("Cross-Validation MAE Score:", -cross_val_mae_scores.mean())
+crossValMaeScores = cross_val_score(model, X, y, cv=5, scoring=mae)
+print("Cross-Validation MAE Score:", -crossValMaeScores.mean())
 
 predicted_y = cross_val_predict(model, X, y, cv=5)
 
@@ -106,18 +106,18 @@ plt.savefig('Charts/CrossValidationPredictions.png')
 plt.close()
 
 '''Lasso Regression'''
-lasso = LassoCV(cv=5, random_state=42).fit(X_train, y_train)
+lasso = LassoCV(cv=5, random_state=42).fit(Xtrain, ytrain)
 
-y_train_pred = lasso.predict(X_train)
-y_test_pred = lasso.predict(X_test)
+ytrainpred = lasso.predict(Xtrain)
+ytestpred = lasso.predict(Xtest)
 
-print("Training R2 Score (Lasso):", r2_score(y_train, y_train_pred))
-print("Training MAE Score (Lasso):", mean_absolute_error(y_train, y_train_pred))
-print("Test R2 Score (Lasso):", r2_score(y_test, y_test_pred))
-print("Test MAE Score (Lasso):", mean_absolute_error(y_test, y_test_pred))
+print("Training R2 Score (Lasso):", r2_score(ytrain, ytrainpred))
+print("Training MAE Score (Lasso):", mean_absolute_error(ytrain, ytrainpred))
+print("Test R2 Score (Lasso):", r2_score(ytest, ytestpred))
+print("Test MAE Score (Lasso):", mean_absolute_error(ytest, ytestpred))
 
 plt.figure(figsize=(10, 6))
-plt.scatter(y_test, y_test_pred, alpha=0.5, color='green')
+plt.scatter(ytest, ytestpred, alpha=0.5, color='green')
 plt.xlabel("True Values")
 plt.ylabel("Predicted Values")
 plt.title("Lasso Regression Predictions (Test Set)")
