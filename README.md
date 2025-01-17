@@ -3,16 +3,6 @@
 
 A project that scrapes Lego pricing data from various websites and past market sales to predict expected value growth using statistical analysis. This project also integrates Google Sheets API for data storage and utilizes AuthO.
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Technologies Used](#technologies-used)
-3. [Data Collection and Storage](#data-collection-and-storage)
-4. [Data Analysis](#data-analysis)
-5. [Results and Insights](#results-and-insights)
-6. [Future Improvements](#future-improvements)
-7. [Legal Disclaimer](#legal-disclaimer)
-8. [How to Run the Project](#how-to-run-the-project)
-
 ---
 
 ### Project Overview
