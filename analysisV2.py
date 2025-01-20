@@ -92,6 +92,31 @@ plt.tight_layout()
 plt.savefig('Charts/LSEPrediction.png')
 plt.close()
 
+import numpy as np
+
+# Define the range of x values for the trend line
+x = np.linspace(ytest.min(), ytest.max(), 100)
+
+# Compute the trend line using the linear regression model coefficients
+coefficients = np.polyfit(ytest, ytestpred, 1)  # Fit a 1-degree polynomial (straight line)
+trendline = np.poly1d(coefficients)  # Create a polynomial function
+
+# Plot the scatter plot
+plt.figure(figsize=(10, 6))
+plt.scatter(ytest, ytestpred, alpha=0.5, color='orange', label="Data Points")
+plt.plot(x, trendline(x), color='blue', linewidth=2, label=f'Trendline: y={coefficients[0]:.2f}x + {coefficients[1]:.2f}')
+plt.xlabel("True Values")
+plt.ylabel("Predictions")
+plt.title("True vs Predicted (Test Set)")
+plt.grid(axis='both', linestyle='--', alpha=0.7)
+plt.legend()
+plt.tight_layout()
+
+# Save or display the plot
+plt.savefig('regression_plot_with_trendline.png')
+plt.close()
+
+
 '''Cross-Validation Regression'''
 crossValR2Scores = cross_val_score(model, X, y, cv=5, scoring='r2')
 print("Cross-Validation R2 Score:", crossValR2Scores.mean())
@@ -138,3 +163,26 @@ coefficients = pd.DataFrame({
     "Coefficient": lasso.coef_
 }).sort_values(by="Coefficient", ascending=False)
 print(coefficients)
+
+import numpy as np
+
+# Define the range of x values for the trend line
+x = np.linspace(ytest.min(), ytest.max(), 100)
+
+# Compute the trend line using the Lasso model
+coefficients = np.polyfit(ytest, ytestpred, 1)  # Fit a 1-degree polynomial (straight line)
+trendline = np.poly1d(coefficients)  # Create a polynomial function
+
+# Plot the scatter plot
+plt.figure(figsize=(10, 6))
+plt.scatter(ytest, ytestpred, alpha=0.5, color='green', label="Data Points")
+plt.plot(x, trendline(x), color='blue', linewidth=2, label=f'Trendline: y={coefficients[0]:.2f}x + {coefficients[1]:.2f}')
+plt.xlabel("True Values")
+plt.ylabel("Predicted Values")
+plt.title("Lasso Regression Predictions (Test Set)")
+plt.grid(axis='both', linestyle='--', alpha=0.7)
+plt.legend()
+plt.tight_layout()
+
+# Save or display the plot
+plt.savefig('Charts/LassoPrediction_with_Trendline.png')
