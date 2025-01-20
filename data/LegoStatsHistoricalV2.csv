@@ -344,7 +344,6 @@ set_id,set_name_x,release_year,num_parts,num_figs,retail_price,num_unique_figs,s
 76110,Batman: The Attack of the Talons,2018,165,3,64.4,2,4.8,20.095,43.44,Super Heroes DC > Batman,0.67453
 76111,Batman: Brother Eye Takedown,2018,279,3,96.62,1,4.5,28.02,53.1,Super Heroes DC > Batman,0.54958
 76112,App-Controlled Batmobile,2018,331,1,289.95,1,4.7,84.13,186.37,Super Heroes DC > Batman,0.64277
-CLUBHOUSE,Clubhouse,2018,80,0,96.62,0,4.3,30.615,73.63,Friends,0.76206
 10256,Taj Mahal,2017,5923,0,966.57,0,4.9,397.71,711.01,Creator > Creator Expert,0.7356
 21032,Sydney,2017,361,0,96.62,0,5.0,30.455,78.32,Architecture > Skylines,0.8106
 21033,Chicago,2017,444,0,144.96,0,4.9,42.515,103.12,Architecture > Skylines,0.71137
