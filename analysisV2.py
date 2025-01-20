@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split, cross_val_score, cross_val
 from sklearn.metrics import r2_score, mean_absolute_error, make_scorer
 from sklearn.linear_model import LinearRegression, LassoCV
 
-df = pd.read_csv('data/LegoStatsHistoricalV2.csv')
+df = pd.read_csv('data/LegoTrainingData.csv')
 
 '''Piece Count vs Retail Price'''
 x = df['num_parts']
@@ -56,7 +56,7 @@ plt.close()
 dfencoded = pd.get_dummies(df, columns=['category'], drop_first=True)
 
 # Select relevant columns
-dfmodel = dfencoded[['set_id', 'num_parts', 'num_figs', 'retail_price', 
+dfmodel = dfencoded[['num_parts', 'num_figs', 'retail_price', 
                      'num_unique_figs', 'set_rating', 'pop_price', 
                      'return']]
 X = dfmodel.drop(['return'], axis=1)
@@ -67,8 +67,6 @@ print("Columns with NaN values:", X.columns[X.isna().any()].tolist())
 print("Number of NaN values per column:\n", X.isna().sum())
 
 # Handle missing values
-X = X.fillna(X.mean())  # Replace NaN with column means
-
 # Split data
 Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2, random_state=42)
 
