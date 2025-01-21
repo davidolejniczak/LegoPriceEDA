@@ -113,7 +113,7 @@ plt.legend()
 plt.tight_layout()
 
 # Save or display the plot
-plt.savefig('regression_plot_with_trendline.png')
+plt.savefig('Charts/regression_plot_with_trendline.png')
 plt.close()
 
 
@@ -186,3 +186,105 @@ plt.tight_layout()
 
 # Save or display the plot
 plt.savefig('Charts/LassoPrediction_with_Trendline.png')
+
+import pandas as pd
+import numpy as np
+import xgboost as xgb
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
+
+# Load your dataset
+data = pd.read_csv('data/LegoTrainingData.csv')  # Replace with the correct path to your CSV file
+
+# Select relevant columns
+data = data[['num_parts', 'num_figs', 'retail_price', 
+             'num_unique_figs', 'set_rating', 'pop_price', 
+             'return']]
+
+# Split features and target
+X = data.drop('return', axis=1)  # Replace 'target_column' with your target column name
+y = data['return']
+
+# Split into train and test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Define the XGBoost model (for regression)
+xgb_regressor = xgb.XGBRegressor(
+    n_estimators=100,  # Number of trees
+    learning_rate=0.1,  # Step size shrinkage
+    max_depth=6,       # Maximum tree depth
+    subsample=0.8,     # Row sampling
+    colsample_bytree=0.8,  # Column sampling
+    random_state=42
+)
+
+# Fit the model
+xgb_regressor.fit(X_train, y_train)
+
+# Predict on the test set
+y_pred = xgb_regressor.predict(X_test)
+
+# Evaluate the model
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print("Regression Results:")
+print(f"Mean Squared Error: {mse}")
+print(f"R2 Score: {r2}")
+
+# Classification: Ensure target is categorical
+if not np.array_equal(y, y.astype(int)):
+    print("Target variable is not categorical. Classification model cannot be used.")
+else:
+    xgb_classifier = xgb.XGBClassifier(
+        n_estimators=100,
+        learning_rate=0.1,
+        max_depth=6,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        random_state=42
+    )
+
+    xgb_classifier.fit(X_train, y_train)
+
+    # Predict on the test set
+    y_pred_class = xgb_classifier.predict(X_test)
+
+    # Evaluate the model
+    accuracy = accuracy_score(y_test, y_pred_class)
+    print("Classification Results:")
+    print(f"Accuracy: {accuracy}")
+
+# Optional: Hyperparameter tuning with GridSearchCV
+param_grid = {
+    'n_estimators': [50, 100, 200],
+    'max_depth': [3, 5, 7],
+    'learning_rate': [0.01, 0.1, 0.2],
+    'subsample': [0.8, 1.0],
+    'colsample_bytree': [0.8, 1.0]
+}
+
+grid_search = GridSearchCV(estimator=xgb.XGBRegressor(random_state=42),
+                           param_grid=param_grid,
+                           scoring='neg_mean_squared_error',
+                           cv=3,
+                           verbose=2)
+
+print("Starting Grid Search for Hyperparameter Tuning...")
+grid_search.fit(X_train, y_train)
+best_params = grid_search.best_params_
+print("Best Parameters:", best_params)
+
+# Train the best model
+best_model = xgb.XGBRegressor(**best_params, random_state=42)
+best_model.fit(X_train, y_train)
+
+# Predict and evaluate with the best model
+y_pred_best = best_model.predict(X_test)
+mse_best = mean_squared_error(y_test, y_pred_best)
+r2_best = r2_score(y_test, y_pred_best)
+
+print("Best Model Results:")
+print(f"Mean Squared Error: {mse_best}")
+print(f"R2 Score: {r2_best}")
+xgb_regressor.save_model('xgb_lego_model.json')
