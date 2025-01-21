@@ -1,5 +1,5 @@
 import webbrowser
-import LegoPriceScraper
+import dataScraping.LegoPriceScraper as LegoPriceScraper
 import os
 
 from google.auth.transport.requests import Request
