@@ -4,6 +4,7 @@
 A project that scrapes Lego pricing data from various websites and past market sales to predict expected value growth using statistical analysis. 
 
 This project showcases my ability to integrate data collection, cloud services, and statistical analysis into a cohesive and impactful tool for investment analysis.
+
 ---
 
 ### Project Overview
