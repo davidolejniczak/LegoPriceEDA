@@ -1,2 +1,9 @@
 xgboost
 pandas
+selenium
+beautifulsoup4
+pandas
+numpy
+matplotlib
+scikit-learn
+fake-useragent
