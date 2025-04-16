@@ -1,16 +1,18 @@
 
 # LegoPricePredictor
 
-A project that scrapes Lego pricing data from various websites and past market sales to predict expected value growth using statistical analysis. This project also integrates Google Sheets API for data storage and utilizes AuthO.
+A project that scrapes Lego pricing data from various websites and past market sales to predict expected value growth using statistical analysis. 
 
+This project showcases my ability to integrate data collection, cloud services, and statistical analysis into a cohesive and impactful tool for investment analysis.
 ---
 
 ### Project Overview
-The LegoPricePredictor project analyzes the potential investment value of Lego sets by scraping data from:
-1. **Lego official website**: Product pricing and set details.
-2. **Lego set pricing site**: Historical pricing trends.
+The LegoPricePredictor project analyzes the potential investment value of Lego sets by analyzing historical prices for retired Leto sets. 
 
-The project employs predictive modeling to estimate ROI (Return on Investment) for Lego sets post-retirement. It leverages statistical methods and visualizations to offer actionable insights for Lego enthusiasts and investors.
+1. **Lego official website**: Product pricing and set details.
+2. **Lego price data sets off Kaggle**: Historical pricing data. 
+
+The project employs predictive modeling to estimate ROI for Lego sets post-retirement. It leverages statistical methods and visualizations to offer insights for Lego investors like myself.
 
 ---
 
@@ -21,26 +23,12 @@ The project employs predictive modeling to estimate ROI (Return on Investment) f
   - `pandas`, `numpy`: Data processing and analysis.
   - `matplotlib`: Data visualization.
   - `sklearn`: Building predictive models.
+  - `fake_useragent` for mimicking legitimate browser behavior and avoiding blocking.
 - **Google Cloud Services**:
   - Google Sheets API for data storage.
   - Google Cloud Console for project management.
 - **Authentication**:
   - Auth0 for secure API access and authentication.
-
----
-
-### Data Collection and Storage
-#### Web Scraping
-- **Tools**:
-  - `Selenium` and `BeautifulSoup`.
-  - `fake_useragent` for mimicking legitimate browser behavior and avoiding blocking.
-- **Sources**:
-  - Data was collected from publicly accessible pages of Lego's website and other sites.
-
-#### Data Storage
-- **Google Sheets Integration**:
-  - Used Google Sheets API to store scraped data.
-  - Authenticated via Google’s Auth0, ensuring secure access.
 
 ---
 
@@ -97,39 +85,30 @@ Based on the results of the linear regression models, the Least Squares Regressi
 1. **Expand Dataset**:
    - Scraping more data points to improve model accuracy.
 2. **Predictive Models**:
-   - Enhance the predictive algorithm for higher R2 scores.
+   - Enhance the predictive algorithm for higher R2 scores or include AI into the analysis. 
 3. **Frontend Development**:
    - Build a web interface using React to make the tool accessible for users.
-
 ---
 
 ### Legal Disclaimer
-This project was developed solely for educational purposes. The web scraping conducted complies with the terms and conditions of the data sources as it only accesses publicly available information. Care has been taken to minimize server load by:
-- Implementing delays in scraping scripts.
-- Using fake user-agent strings to mimic legitimate browser traffic.
-
-If any data source has concerns about their data usage, please contact me, and I will promptly take appropriate action.
+This project was developed solely for educational purposes. The web scraping conducted complies with the terms and conditions of the data sources as it only accesses publicly available information. Care has been taken to minimize server load. 
 
 ---
 
 ### How to Run the Project
 #### Prerequisites
-1. Python 3.8 or higher installed on your system.
+1. Python 3.8 or higher.
 2. Google Cloud Console account with Sheets API enabled.
 3. Necessary Python libraries installed:
    ```bash
-   pip install selenium beautifulsoup4 pandas numpy matplotlib scikit-learn fake-useragent
+   pip install -r requirements.txt
    ```
 
 #### Steps
-**Use Google Sheets API**:
-   - Create a project in Google Cloud Console.
-   - Enable Google Sheets API and download credentials JSON.
-   - Update the project’s environment variables with your credentials file.
 **Scrape lego data**:
    - Launch the Selenium-based scraper to collect data and upload the links in the text files
-   - The SheetUpdater is for pricing data from the Lego website
-   - The UpdatesManager is for data from an third party lego site
+   - The SheetUpdater is for pricing data from the offical Lego website
+   - The UpdatesManager is for data from an third party Lego site
    ```bash
    python SheetUpdater.py
    ```
@@ -143,5 +122,3 @@ If any data source has concerns about their data usage, please contact me, and I
    python analysis.py
    ```
 ---
-
-This project showcases my ability to integrate data collection, cloud services, and statistical analysis into a cohesive and impactful tool for business analysis. If you have any questions or opportunities to discuss, please feel free to reach out!
