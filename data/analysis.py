@@ -12,7 +12,7 @@ df = pd.read_csv('data/LegoStatsHistorical.csv')
 x = df['num_parts']
 y = df['retail_price']
 
-coefficients = np.polyfit(x, y, deg=1)  # Linear trendline
+coefficients = np.polyfit(x, y, deg=1)
 trendline = np.poly1d(coefficients)
 
 plt.figure(figsize=(10, 6))
