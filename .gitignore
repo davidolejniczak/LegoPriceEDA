@@ -7,3 +7,4 @@ InternalLinks.txt
 __pycache__/
 .env
 node_modules/
+.DS_store
